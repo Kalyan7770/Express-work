@@ -1,2 +1,3 @@
-const student =[];
-export{students};
+const students = [];
+
+export { students };
