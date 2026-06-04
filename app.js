@@ -25,7 +25,8 @@ app.get("/error", (req, res) => {
 app.use("/api/students", studentRouter);
 
 // Error Handler Middleware (must be last)
-app.use(errorHandler);
+app.use(notFoundHandler); // 404 handler
+app.use(errorHandler);    // Error handler
 
 // Start Server
 app.listen(3000, () => {
